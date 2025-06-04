@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/form.css">
+	
+	</head>
+
+	
+	<body>
+
+		<main>
+
+       		<div class="head">
+
+			    <a class="title" href="homepage.html">
+			    	<h1>Balata College</h1>
+
+			    </a>
+				<div class="info">
+
+					<p>Phone/Fax: 9423847</p>	
+					<p>Email: balatacollege@yahoo.com</p>
+					
+					<p><a class="loca" href="https://www.google.com/maps/place/Balata+College/@-17.4582529,177.8900064,17z/data=!3m1!4b1!4m6!3m5!1s0x6e19b7d02b2f0df3:0xca0f021a2ee61fbd!8m2!3d-17.458258!4d177.8925813!16s%2Fg%2F11s5fgkk1t?entry=ttu&g_ep=EgoyMDI1MDQxNi4xIKXMDSoASAFQAw%3D%3D">
+                       Tavua, Fiji
+					</a></p>
+
+
+				    </div>
+
+
+
+
+			</div>
+	
+			<nav>
+        		<div class="topnav">
+					<a href="homepage.html">Home</a>
+					<a href="aboutus.html">About Us</a>
+            		<a href="calendar.html">School Calendar</a>
+					<a href="department.html">Departments</a>
+					<a class="right right active" href="contactus.html">Contact Us</a>
+					<a class="right" href="enrol.html">Enrollment</a>
+
+       			</div>
+
+        
+    		</nav>
+	
+		</main>
+	
+		<main>
+		
+		    <center> 
+				<h1>Contact Us</h1>
+				<br/>				
+				<p>Questions or Issues? We're here to help! Fill in the form below, and our team will be on the case. 
+				</p>
+					<form id="contact-form">
+    					<label>Full Name</label>
+    					<input name="name" placeholder="Name" type="text" required>
+
+    					<label>Contact</label>
+    					<input name="contact" placeholder="0000000" type="text" required>
+
+    					<label>Email</label>
+   						<input name="email" placeholder="email@something.com" type="email" required>
+
+  						<label>Message</label>
+   						<textarea name="message" placeholder="Share your opinion with us!" required></textarea>
+
+    					<input type="submit" value="Submit">
+					</form>
+
+			</center>
+		
+		</main>
+	
+
+	<!-- cool shit that took forver. Now, warning time: DO NOT FUCKING TOUCH IT -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    emailjs.init("jFB96YnY5rf6Jiyf8");
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_xeqnugq', 'template_gac0qoi', this)
+      .then(function () {
+        alert("Message sent successfully!");
+      }, function (error) {
+        alert("Failed to send message. Error: " + JSON.stringify(error));
+      });
+  });
+</script>
+</body>
+
+	
+	<footer>
+	    <hr/>
+
+        <center>
+              <p><em>&copy; 2025 &ndash;Balata Collage</em></p>
+              <p>Made by Feintwell</p>
+        </center>
+        
+	</footer>
+	
+</html>

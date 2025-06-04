@@ -1,0 +1,35 @@
+
+
+
+main table {
+    width: 100%;
+    border: 1px solid #9AA7ED;
+    border-spacing: 0px;
+}
+
+main th, td {
+    width: 25%;
+    padding: 15px;
+    text-align: left;
+}
+
+main td {
+    vertical-align: bottom;
+}
+
+main th {
+    background-color: #5D72E3;
+    color: white;
+}
+
+main table img {
+    width: 200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main tr:nth-child(odd) {
+    background-color: #ffffff;
+}
