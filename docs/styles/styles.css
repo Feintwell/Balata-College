@@ -1,9 +1,12 @@
 body {
-    background-color: white;
+    background-color: #E1F7F5;
     font-family: 'Helvetica';
     font-size: 19px;
 }
 
+.h1 {
+color: #1E0342;
+}
 
 .head a.title {
     font-size: 45px;
